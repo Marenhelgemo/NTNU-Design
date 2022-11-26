@@ -1,0 +1,254 @@
+header {
+    background-color: rgb(0, 80, 158);
+    background-attachment: fixed;
+    background-size: cover;     /* The background-image covers the whole page in width */
+    background-position: center;
+    height: 5vh;
+}
+/* The text in the header */
+header p {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-top: 0%;
+    color: white;
+
+}
+/* This div is for the title */
+header>div {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    min-height: 1em;
+    transform: rotate(-10deg);
+    background-color: rgb(0, 80, 158);    /* For the white box behind the text */
+    opacity: 0.8;
+}
+/* This div is for homepage-description */
+.header-div{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  min-height: 1em;
+transform:translate(150%,-30%);
+  background-color: rgb(0, 80, 158);    /* For the white box behind the text */
+  opacity: 0.8;
+  max-width: 500px;
+  padding: 2%;
+}
+/* The image in header */
+.background-image {
+  background-image: url(img/codedesign.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 5px gray;
+  margin-bottom: 2%;
+}
+/* This is where we style our javascript */
+.menu-item {
+  padding: 20px;
+  margin: 20px;
+  border-style: solid;
+}
+
+
+body {
+  background: url("img/background.png");
+  background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+   margin: auto;
+  }
+
+h1 {
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 2em;
+    padding: 2em;
+    color: white;
+} 
+nav {
+background-color:black; 
+overflow: hidden;
+padding: 2px 3px; 
+justify-content: center;
+position: bottom;
+
+}
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 100px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Color links on hover */
+nav a:hover {
+  background-color:rgb(0, 80, 158);
+  color: white;
+  transition-duration: 2s; /* Decides how long it should take for the full color to show */
+}
+
+
+fieldset {
+  padding: 5%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: white;
+  text-align: center;
+  box-shadow: 10px 10px 5px rgb(0, 80, 158); 
+  
+ }
+
+ fieldset.signup {
+  display: block;
+  min-inline-size: min-content;
+  border-width: 8px;
+  border-style: dotted;
+ }
+
+input [type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+input[type=submit] {
+  width: 10%;
+  background-color: rgb 223, 216, 197;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-SoMe img{
+  max-width: 5%;
+}
+.contact img{
+  max-width: 7%;
+}
+/*You will find this signupbox under Application*/
+.signupbox {
+  width: 45%;
+  margin: 10%;
+  padding: 4% 5% 4%;
+  background: rgba(121,162,206);
+  border-radius: 5%;
+  box-shadow: 10px 10px 5px rgb(0, 80, 158); 
+  transform:translate(30%,-30%);
+}
+
+/* this is for the map */
+iframe {
+  width: 100%; 
+  height: 500px;
+  align-content: space-around;
+}
+
+/* We make a wrapper and create two columns under contact */
+.wrapper { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-auto-rows: 100%; 
+  background-color: white;
+
+} 
+/* styling for our contact-information */
+.contacts{
+margin: 20px;
+}
+
+/* these are the homepage content */
+
+* { /* This star equals "all" */
+  box-sizing: border-box;
+
+ }
+ .cards {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+ }
+ .card {
+   width: 485px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+   background-color: white;
+ } 
+ .card img {
+   max-width: 100%;
+ }
+ 
+ .card .text {
+   padding: 0 20px 20px;
+
+ } /*Our footer where we place our logo*/
+.footerimg {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+} /*Our footer where we place our text*/
+footer p {
+  text-align: center;
+}
+.course-item {
+padding: 3%;
+margin: 1%;
+background-color: white;
+border-radius: 20px;
+}
+
+#programmes-container>h2 {
+  background-color: rgb(0, 80, 158);
+  max-width: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; 
+  margin: auto;
+  padding: 1%;
+/*We use media-tags to make our webpage responsive*/
+ }
+@media screen and (max-width: 600px) {
+    body { 
+      font-size: 1.2rem;
+  }
+      header img{ 
+      height: 30vh;
+  }
+      header>div { 
+      height: 20vw;
+      width: 30;
+      transform: translate(5%);
+ }
+ header h1 { 
+  font-size: 20px;
+  padding: auto;
+ }
+  .signupbox {
+    display: block;
+    width: 400px;
+    transform: none;
+  }
+  fieldset.signup { 
+  max-width: 50px;
+  border-width: 8px;
+  border-style: dotted;
+
+}
+.card img {
+  max-width: 100%;
+}
+}

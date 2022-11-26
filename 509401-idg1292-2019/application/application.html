@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style.css">
+  <title>NTNU Design Gjøvik</title>
+  <meta name="keywords" content="NTNU, Gjøvik, University, Faculty of Architecture and Design, Study, Webcoding, Master, Bachelor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- If a person click on the submit-button, this script will take the user to a site where the user gets feedback that the text was submitted  -->
+  <script>
+      function sumit_app () {
+    var thankyou_parra = document.getElementById('application');
+    thankyou_parra.innerHTML = "Thank you! You have sent your application. We at NTNU look forward to seeing you!";}
+    </script>
+</head>
+
+	
+<body>
+  <header>
+    <p>Department of Design <q>Knowledge for a better world!</q></p>
+    <div><h1>Application</h1></div>
+    </header>
+
+        <div class="background-image">
+            <div class="container">
+        <nav>
+          <a href="../homepage.html">Home</a>
+          <a href="../programmes/programmes.html">Programmes</a>
+          <a class="active" href="application.html">Application</a>
+          <a href="../contact/contact.html">Contact</a>
+        </nav>
+          </div>
+          </div>
+
+
+<div id="application" class=signupbox>
+<article>
+  <h2>Sign up</h2>
+  <p>Please fill out the form if you wish to apply for scholarship.</p>
+</article>
+<!-- This is the form. Required-tags means that the user cant go furter without doing the required thing-->
+<article>
+  <form action="/action_page.php" method="POST" id=applicationform>
+    <fieldset class="signup">
+        <label for="firstname-form" id="fname">Firstname</label><br>
+        <input type="text" id="firstname-form" name="firstname-form" value="" required> <br>
+        <label for="lastname" id="lname">Last name</label> <br>
+        <input type="text" id="lastname" name="lastname" value="" required><br>
+        <label for="phone" id="tlf">Enter your phone number:</label><br>
+        <span class="note">Format: 123-456-7890</span><br>
+      <input type="tel" id="phone" name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required> <br>
+    
+      <label for="email" id="mail">Enter your email:</label>
+      <br><input type="email" id="email"
+        pattern="" size="30" required><br>
+      <label for="programme" id="prg"> Programme </label><br>
+      
+      <select id="programme" required>
+        <option value="bwu">BWU</option>
+        <option value="bixd">BIXD</option>
+        <option value="arweb">ARWEB</option>
+        <option value="mixd">MIXD</option>
+    </select>
+
+      
+      <p>Academic background comment: </p>
+      <label for="background">Comment</label>
+      <textarea id="background" name="background"></textarea>
+    
+    <p>If you have other comments:</p>
+
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="user_comment"></textarea><br>
+      <input type="button" value="Submit" onclick="sumit_app();"/>  <!-- onclick is necessary to make the javascript work, since it "listens" for click on the button  -->
+      </fieldset>
+    </form>
+
+</article>
+</div>
+<footer>
+    <figure>
+<img class="footerimg" src="../img/logo_ntnu.png" alt="ntnu logo">
+<p>Made by Maren Solem Helgemo</p>
+  </figure>
+</footer>
+
+</body>
+</html>
+
+
