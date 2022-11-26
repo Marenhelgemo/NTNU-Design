@@ -1,1 +1,0 @@
-This is a project I made while I was a student at NTNU Gjøvik.
